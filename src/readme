@@ -1,6 +1,7 @@
 간단한 독서 토론 챗봇
 
 구동 방법:
+0. openai api key를 동일 디렉토리에 openai_key.txt로 저장
 1. ollama gemma3 설치 및 로컬에서 구동: localhost/11434
 2. 내부 gradio_ui.py 실행, 로컬에서 gradio 서버 구동: 127.0.0.1:7860
 3. 내부 flask_app.py 실행, 로컬에서 flask 서버 구동: 127.0.0.1:5000
