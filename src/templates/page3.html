@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>군주론 챗봇 토론</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 15px;
+      padding: 10px 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .chat-container {
+      margin: 30px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .chat-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .chat-header h2 {
+      margin: 0;
+    }
+
+    .toggle-mode {
+      display: flex;
+      align-items: center;
+      border: 1px solid #999;
+      border-radius: 20px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .toggle-switch {
+      margin-left: 10px;
+      width: 20px;
+      height: 20px;
+      background-color: orange;
+      border-radius: 50%;
+    }
+
+    .chat-summary {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 1.2em;
+      color: #666;
+    }
+
+    .input-area {
+      display: flex;
+      margin-top: 40px;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+    }
+
+    .input-area input {
+      flex: 1;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+
+    .input-area button {
+      padding: 10px 20px;
+      background-color: #f6b53f;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+
+    .home-btn {
+      margin-left: auto;
+      margin-right: 20px;
+    }
+
+    .home-btn a {
+      text-decoration: none;
+      color: white;
+      background-color: #333;
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>3DX 투데이 피드 검색 내 서재 관리</div>
+    <div class="home-btn"><a href="/">홈으로 돌아가기</a></div>
+  </header>
+
+  <div class="nav-tabs">
+    <span>☰ NOW</span>
+    <span>챗북</span>
+    <span>오디오북</span>
+    <span>도슨트북</span>
+  </div>
+
+  <div class="chat-container">
+    <div class="chat-header">
+      <h2>군주론</h2>
+      <div class="toggle-mode">
+        토론 모드
+        <div class="toggle-switch"></div>
+      </div>
+    </div>
+  
+    <!-- Gradio iframe 삽입 -->
+    <iframe src="http://127.0.0.1:7860" width="100%" height="600" style="border: none; border-radius: 10px;"></iframe>
+  </div>
+
+</body>
+</html>

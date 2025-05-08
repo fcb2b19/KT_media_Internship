@@ -1,0 +1,14 @@
+## Books Involved:
+{book_titles}
+
+## Prior Conversation Summary:
+{history}
+
+## Relevant Information:
+{retreived_chunks}
+
+## Question:
+The user asked: "{query}"
+
+Answer in {language}
+Begin your answer:

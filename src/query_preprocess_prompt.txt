@@ -1,0 +1,13 @@
+1. Using the context given, Translate the following query in english so that this query can stand on its own.
+2. Using the Book list, Determine whether this query requires a single book or multiple books to respond.
+3. Extract english keywords from this query to search relevant books from a vector db that contains title and summary.
+Respond ONLY with a valid JSON object, and nothing else. No explanation.
+Format your response to ALWAYS FOLLOW following format:
+{{
+    "translated_query": "your_translated_query",
+    "multi_book": "true"/"false",
+    "search_query": "your_extracted_keywords, comma, separated"
+}}
+Book List: {book_list}
+Query: {query};
+Context: {history}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>군주론 상세 페이지</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 15px;
+      padding: 10px 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .book-cover-container {
+      display: flex;
+      justify-content: center;
+      padding: 30px 20px;
+    }
+
+    .content-wrapper {
+      display: flex;
+      padding: 30px;
+      gap: 30px;
+    }
+
+    .book-cover {
+      width: 300px;
+      height: 460px;
+      background-color: #a05278;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    #book-cover-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .button-group button {
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .book-info {
+      flex: 1;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .book-info h2 {
+      margin-top: 0;
+    }
+
+    .meta {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .meta span {
+      margin-right: 10px;
+    }
+
+    .info-footer {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .action-button {
+      width: 30px;
+      height: 30px;
+      background-color: #eee;
+      border-radius: 50%;
+    }
+
+    .main-actions {
+      display: flex;
+      margin-top: 20px;
+      gap: 5px;
+    }
+
+    .main-actions a {
+      flex: 1;
+      text-align: center;
+      padding: 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .read-now {
+      background-color: #333;
+    }
+
+    .chatbot {
+      background-color: #ccc;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>3DX 투데이 피드 검색 내 서재 관리</div>
+    <div>🔔10+ <button>로그아웃</button></div>
+  </header>
+
+  <div class="nav-tabs">
+    <span>☰ NOW</span>
+    <span>챗북</span>
+    <span>오디오북</span>
+    <span>도슨트북</span>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="book-cover">
+      <div id ="book-cover-container">
+        <img src="{{ url_for('static', filename='The_Prince.jpg') }}" alt="군주론 커버" width="250">
+      </div>
+      <div class="button-group">
+        <button>전자책</button>
+        <button>오디오북</button>
+      </div>
+    </div>
+
+    <div class="book-info">
+      <h2>군주론</h2>
+      <p class="meta">
+        <span>니콜로 마키아벨리 지음</span> |
+        <span>⭐ 4.2</span>
+        <span>출판사 철학</span>
+        <span>2021.07.26</span>
+      </p>
+      <p>이 책이 담긴 서재 3.1만+</p>
+
+      <div class="info-footer">
+        <div class="action-buttons">
+          <div class="action-button"></div>
+          <div class="action-button"></div>
+          <div class="action-button"></div>
+        </div>
+      </div>
+
+      <div class="main-actions">
+        <a href="#" class="read-now">바로 읽기</a>
+        <a href="/goto/chat" class="chatbot">챗봇과 토론하기</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

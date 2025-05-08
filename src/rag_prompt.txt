@@ -1,0 +1,12 @@
+Given the user question:
+"{query}"
+
+and the selected book(s):
+{book_titles}
+
+Generate a concise search query per book to extract relevant context chunks.
+Return as:
+{{
+  "Book_A": "query for chromadb",
+  "Book_B": "query for chromadb"
+}}
