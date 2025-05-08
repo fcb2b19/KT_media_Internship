@@ -2,6 +2,7 @@
 
 구동 방법:
 0. openai api key를 동일 디렉토리에 openai_key.txt로 저장
+  0-1 https://drive.google.com/file/d/14xYshQ8Adz08YbKisjvi8iBseaHDfq5Y/view?usp=sharing 에서 크로마 db를 다운받아 동일 디렉토리에 압축 해제
 1. ollama gemma3 설치 및 로컬에서 구동: localhost/11434
 2. 내부 gradio_ui.py 실행, 로컬에서 gradio 서버 구동: 127.0.0.1:7860
 3. 내부 flask_app.py 실행, 로컬에서 flask 서버 구동: 127.0.0.1:5000
